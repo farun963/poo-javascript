@@ -75,6 +75,9 @@ class LearningPath {
       this.name = name;
       this.courses = courses;
     }
+    addCourse(course) {
+        this.courses.push(course);
+    }
 };
 
 const escuelaWeb = new LearningPath({
@@ -113,7 +116,7 @@ class Student {
         this.learningPaths = learningPaths;
     }
 
-    
+
 };
 
 const juan2 = new Student({
